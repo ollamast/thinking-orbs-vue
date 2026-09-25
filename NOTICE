@@ -1,7 +1,12 @@
+thinking-orbs-vue bundles code from the following project:
+
+thinking-orbs 0.3.1 (the `thinking-orbs/engine` entry point)
+https://github.com/Jakubantalik/thinking-orbs
+npm: https://www.npmjs.com/package/thinking-orbs/v/0.3.1 (published with SLSA provenance)
+
 MIT License
 
-Copyright (c) 2026 Ollamast Agency
-Copyright (c) 2026 Jakub Antalik (thinking-orbs engine, bundled in dist/)
+Copyright (c) 2026 Jakub Antalik
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

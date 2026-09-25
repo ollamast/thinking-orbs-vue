@@ -1,0 +1,66 @@
+{
+  "name": "thinking-orbs-vue",
+  "version": "0.1.0",
+  "description": "Vue 3 port of thinking-orbs — dotted thought-orb loading indicators for AI & agent UIs. Zero runtime dependencies, no React.",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "NOTICE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite --config vite.config.demo.ts",
+    "build": "vite build && vue-tsc -p tsconfig.build.json",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "verify:dist": "node scripts/verify-dist.mjs",
+    "release:check": "bun run typecheck && bun run test && bun run build && bun run verify:dist"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.9",
+    "@vue/test-utils": "2.5.1",
+    "happy-dom": "20.14.5",
+    "thinking-orbs": "0.3.1",
+    "typescript": "~6.0.3",
+    "vite": "8.3.1",
+    "vitest": "5.0.2",
+    "vue": "3.5.43",
+    "vue-tsc": "3.3.11"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "nuxt",
+    "loading",
+    "loader",
+    "spinner",
+    "ai",
+    "agent",
+    "llm",
+    "canvas",
+    "animation",
+    "dark-mode",
+    "thinking-orbs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollamast/thinking-orbs-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ollamast/thinking-orbs-vue/issues"
+  },
+  "homepage": "https://github.com/ollamast/thinking-orbs-vue#readme"
+}
